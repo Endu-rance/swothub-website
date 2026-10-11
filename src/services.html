@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWOT Hub - Integrated Solutions for Growth & Sustainability</title>
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <script defer src="./assets/js/main.js"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-slate-50">
+
+  <!-- Floating Sticky Glass Navigation Bar -->
+  <header class="sticky top-4 z-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full -mb-20 sm:-mb-24">
+    <div
+      class="bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-full shadow-lg px-3 sm:px-5 h-14 sm:h-16 flex items-center justify-between transition-all">
+
+      <!-- 1. Left: Logo Image -->
+      <a href="index.html" class="flex items-center">
+        <img src="./assets/images/logo.jpeg" alt="SWOT Hub Logo"
+          class="h-9 sm:h-11 w-auto object-contain transition-transform duration-200 hover:scale-105 rounded-2xl">
+      </a>
+
+      <!-- 2. Center: Classic Nav Menu with Oval Hover Effect -->
+      <nav class="hidden md:flex items-center space-x-1">
+        <a href="index.html"
+          class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100/80 active:bg-slate-200 transition-all duration-200">
+          Home
+        </a>
+        <a href="services.html"          
+          class="px-3.5 py-1.5 rounded-full text-sm font-semibold text-[#014083] bg-[#014083]/10 transition-all duration-200">
+          Services
+        </a>
+        <a href="about.html"
+          class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100/80 active:bg-slate-200 transition-all duration-200">
+          About
+        </a>
+        <a href="contact.html"
+          class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100/80 active:bg-slate-200 transition-all duration-200">
+          Contact Us
+        </a>
+      </nav>
+
+      <!-- 3. Right: CTA Action & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a href="contact.html"
+          class="hidden sm:inline-flex items-center justify-center bg-[#014083] text-white px-3.5 py-1.5 rounded-full text-sm font-semibold hover:bg-[#012d5d] transition-all duration-200 shadow-sm hover:shadow-md">
+          Get Started
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation"
+          class="md:hidden p-2 rounded-full text-slate-700 hover:text-[#014083] hover:bg-slate-100 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu"
+      class="hidden md:hidden mt-2 border border-slate-200/80 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl space-y-2">
+      <a href="index.html"
+        class="block px-4 py-2.5 rounded-full text-base font-semibold text-[#014083] bg-[#014083]/10">Home</a>
+      <a href="services.html"
+        class="block px-4 py-2.5 rounded-full text-base font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100">Services</a>
+      <a href="about.html"
+        class="block px-4 py-2.5 rounded-full text-base font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100">About</a>
+      <a href="contact.html"
+        class="block px-4 py-2.5 rounded-full text-base font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100">Contact
+        Us</a>
+    </div>
+  </header>
+
+  <!-- Services Page Banner Section -->
+  <section class="relative bg-slate-950 text-white pt-36 sm:pt-44 pb-16 sm:pb-24 overflow-hidden flex items-center">
+
+    <!-- Background Ambient Glow & Pattern -->
+    <div
+      class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:24px_24px] opacity-20 pointer-events-none">
+    </div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-[#014083]/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Content Container -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+      <div
+        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#014083]/60 border border-blue-400/30 text-blue-200 text-xs font-bold tracking-widest uppercase mb-4 backdrop-blur-md">
+        <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+        What We Do
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white drop-shadow-lg">
+        Our Services
+      </h1>
+      <p class="mt-4 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+        Comprehensive, integrated solutions designed to drive growth, compliance, and sustainable transformation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Overview Section -->
+  <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+    <div class="elevation-card p-8 sm:p-12 border-l-4 border-l-[#014083] relative overflow-hidden">
+
+      <!-- Decorative Subtle Background Glow -->
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#014083]/5 rounded-full blur-3xl pointer-events-none">
+      </div>
+
+      <div class="max-w-4xl">
+        <!-- Section Label -->
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#014083]/10 border border-[#014083]/20 text-[#014083] text-xs font-bold tracking-widest uppercase mb-6">
+          <span class="w-2 h-2 rounded-full bg-[#014083]"></span>
+          Strategic Capability
+        </div>
+
+        <!-- Main Heading -->
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
+          Empowering Sustainable Growth Across Sectors
+        </h2>
+
+        <!-- Paragraph Content -->
+        <div class="space-y-4 text-slate-600 leading-relaxed text-base sm:text-lg">
+          <p>
+            At <strong class="text-slate-900 font-semibold">SWOTHub LTD</strong>, we provide integrated,
+            forward-thinking solutions that empower individuals, startups, SMEs, government agencies, and corporations
+            to grow with clarity and confidence. Our expertise spans across ICT & IT services, business solutions,
+            financial advisory, project management, digital services, and real estate.
+          </p>
+          <p class="text-slate-800 font-medium border-t border-slate-100 pt-4 mt-4">
+            We are more than a service provider — <span class="text-[#014083] font-bold">we are a strategic
+              partner</span> committed to bridging gaps in operations, compliance, and expansion.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Estate & Construction Service Section -->
+  <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+      <!-- Left Column: Image -->
+      <div class="lg:col-span-5 relative group">
+        <!-- Ambient Backdrop Glow -->
+        <div
+          class="absolute -inset-4 bg-gradient-to-tr from-[#014083]/20 to-blue-400/20 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        </div>
+
+        <!-- Image Card Container -->
+        <div class="relative rounded-3xl overflow-hidden border border-slate-200/80 bg-white shadow-2xl">
+          <img src="./assets/images/real-estate-service.jpg" alt="Real Estate & Construction Services"
+            class="w-full h-[450px] sm:h-[550px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+          <!-- Overlay Gradient for Depth -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none">
+          </div>
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-white/50 shadow-lg flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-[#014083] text-white flex items-center justify-center font-bold shrink-0">
+              🏗️
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Infrastructure & Property</p>
+              <p class="text-xs text-slate-500">End-to-end development & management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Content -->
+      <div class="lg:col-span-7 flex flex-col justify-center">
+
+        <!-- 1. Heading -->
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Real Estate & Construction
+        </h2>
+
+        <!-- 2. Horizontal Rule -->
+        <hr class="my-6 border-t-2 border-[#014083]/20 w-24">
+
+        <!-- 3 to 7: Service Paragraph Cards -->
+        <div class="space-y-4">
+
+          <!-- 3. Property Sales & Leasing -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] group">
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <strong class="text-slate-900 font-bold block sm:inline">Property Sales & Leasing:</strong>
+              Seamless buying, selling, and leasing of residential, commercial, and industrial properties.
+            </p>
+          </div>
+
+          <!-- 4. Real Estate Advisory & Consultancy -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] group">
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <strong class="text-slate-900 font-bold block sm:inline">Real Estate Advisory & Consultancy:</strong>
+              Expert guidance on property investment, valuation, and development, supported by in-depth market research
+              and feasibility studies.
+            </p>
+          </div>
+
+          <!-- 5. Property Management -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] group">
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <strong class="text-slate-900 font-bold block sm:inline">Property Management:</strong>
+              Comprehensive rental management, including tenant screening, rent collection, maintenance, and value
+              optimization.
+            </p>
+          </div>
+
+          <!-- 6. Development & Project Management -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] group">
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <strong class="text-slate-900 font-bold block sm:inline">Development & Project Management:</strong>
+              Planning, design, and execution of real estate development projects — delivered on time, within budget,
+              and to the highest quality standards.
+            </p>
+          </div>
+
+          <!-- 7. Land Acquisition & Documentation -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] group">
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <strong class="text-slate-900 font-bold block sm:inline">Land Acquisition & Documentation:</strong>
+              Reliable land sourcing, verification, and due diligence, including title documentation, survey, and
+              registration to safeguard clients against fraud.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Business & Enterprise Solutions Section -->
+  <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+      <!-- Left Column: Content -->
+      <div class="lg:col-span-7 flex flex-col justify-center">
+
+        <!-- Badge & Main Heading -->
+        `
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Business & Enterprise Solutions
+        </h2>
+
+        <!-- Subtitle Paragraph -->
+        <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
+          We help organizations transform how they work, boost efficiency, and scale with technology-driven systems.
+        </p>
+
+        <hr class="my-6 border-t-2 border-[#014083]/20 w-24">
+
+        <!-- Feature Bullet List Cards -->
+        <div class="space-y-4">
+
+          <!-- Bullet 1: ERP Systems -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📊
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Enterprise Resource Planning (ERP) Systems
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Centralized platforms for managing finance, HR, operations, and supply chains.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 2: Digital Transformation Consulting -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              🚀
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Digital Transformation Consulting
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Helping businesses move from manual to digital-first processes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 3: Workflow Automation -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              ⚡
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Workflow Automation
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Streamlining repetitive tasks to save time and reduce errors.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 4: Business Analytics & Reporting -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📈
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Business Analytics & Reporting
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Tools that turn raw data into actionable insights for growth.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Closing Summary Paragraph -->
+        <p class="text-slate-800 font-semibold text-sm sm:text-base mt-6 pt-4 border-t border-slate-200/80">
+          Our enterprise solutions empower businesses to grow smarter and operate with agility.
+        </p>
+
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="lg:col-span-5 relative group">
+        <!-- Ambient Backdrop Glow -->
+        <div
+          class="absolute -inset-4 bg-gradient-to-br from-blue-400/20 to-[#014083]/20 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        </div>
+
+        <!-- Image Card Container -->
+        <div class="relative rounded-3xl overflow-hidden border border-slate-200/80 bg-white shadow-2xl">
+          <img src="./assets/images/enterprise-solutions.jpg" alt="Business and Enterprise Solutions"
+            class="w-full h-[450px] sm:h-[550px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+          <!-- Overlay Gradient for Depth -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none">
+          </div>
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-white/50 shadow-lg flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-[#014083] text-white flex items-center justify-center font-bold shrink-0">
+              💻
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Digital Agility</p>
+              <p class="text-xs text-slate-500">Automated workflows & analytics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ICT & Data Solutions Section -->
+  <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+      <!-- Left Column: Image -->
+      <div class="lg:col-span-5 relative group">
+        <!-- Ambient Backdrop Glow -->
+        <div
+          class="absolute -inset-4 bg-gradient-to-tr from-[#014083]/20 to-sky-400/20 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        </div>
+
+        <!-- Image Card Container -->
+        <div class="relative rounded-3xl overflow-hidden border border-slate-200/80 bg-white shadow-2xl">
+          <img src="./assets/images/ict-data-solutions.jpg" alt="ICT and Data Solutions"
+            class="w-full h-[450px] sm:h-[550px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+          <!-- Overlay Gradient for Depth -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none">
+          </div>
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-white/50 shadow-lg flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-[#014083] text-white flex items-center justify-center font-bold shrink-0">
+              🔒
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Secure Infrastructure</p>
+              <p class="text-xs text-slate-500">Cloud, cybersecurity & compliance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Content -->
+      <div class="lg:col-span-7 flex flex-col justify-center">
+
+        <!-- Badge & Main Heading -->
+
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          ICT & Data Solutions
+        </h2>
+
+        <!-- Subtitle Paragraph -->
+        <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
+          We provide reliable, secure, and scalable ICT services to keep businesses and institutions ahead in the
+          digital age.
+        </p>
+
+        <hr class="my-6 border-t-2 border-[#014083]/20 w-24">
+
+        <!-- Feature Bullet List Cards -->
+        <div class="space-y-4">
+
+          <!-- Bullet 1: Cloud Hosting & Services -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              ☁️
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Cloud Hosting & Services
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Flexible, secure, and cost-effective hosting for apps, data, and systems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 2: Cybersecurity -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              🛡️
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Cybersecurity
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Comprehensive protection against threats, ensuring data privacy and system safety.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 3: Big Data & Analytics -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📡
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Big Data & Analytics
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Harnessing data to drive innovation, strategy, and performance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 4: Digital Compliance -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📜
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Digital Compliance
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Ensuring businesses meet NDPR, GDPR, and global digital standards.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Closing Summary Paragraph -->
+        <p class="text-slate-800 font-semibold text-sm sm:text-base mt-6 pt-4 border-t border-slate-200/80">
+          We keep your data secure, your systems compliant, and your digital infrastructure future-proof.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Government & Public Sector Solutions Section -->
+  <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+      <!-- Left Column: Content -->
+      <div class="lg:col-span-7 flex flex-col justify-center">
+
+        <!-- Badge & Main Heading -->
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Government & Public Sector Solutions
+        </h2>
+
+        <!-- Subtitle Paragraph -->
+        <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
+          We partner with government bodies to improve governance, citizen engagement, and public service delivery.
+        </p>
+
+        <hr class="my-6 border-t-2 border-[#014083]/20 w-24">
+
+        <!-- Feature Bullet List Cards -->
+        <div class="space-y-4">
+
+          <!-- Bullet 1: E-Governance Platforms -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              🏛️
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                E-Governance Platforms
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Digital systems for efficient public service management.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 2: Citizen Engagement Systems -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              🤝
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Citizen Engagement Systems
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Interactive platforms that connect government and citizens.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 3: Digital Reporting Tools -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📊
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Digital Reporting Tools
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Simplifying data collection, monitoring, and reporting for transparency.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 4: Policy Alignment & Compliance -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📜
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Policy Alignment & Compliance
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Ensuring government ICT systems meet regulations and policy standards.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Closing Summary Paragraph -->
+        <p class="text-slate-800 font-semibold text-sm sm:text-base mt-6 pt-4 border-t border-slate-200/80">
+          Our government solutions drive transparency, accountability, and citizen trust.
+        </p>
+
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="lg:col-span-5 relative group">
+        <!-- Ambient Backdrop Glow -->
+        <div
+          class="absolute -inset-4 bg-gradient-to-br from-blue-400/20 to-[#014083]/20 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        </div>
+
+        <!-- Image Card Container -->
+        <div class="relative rounded-3xl overflow-hidden border border-slate-200/80 bg-white shadow-2xl">
+          <img src="./assets/images/government-solutions.jpg" alt="Government and Public Sector Solutions"
+            loading="lazy" decoding="async"
+            class="w-full h-[450px] sm:h-[550px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+          <!-- Overlay Gradient for Depth -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none">
+          </div>
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-white/50 shadow-lg flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-[#014083] text-white flex items-center justify-center font-bold shrink-0">
+              🏛️
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Public Trust</p>
+              <p class="text-xs text-slate-500">Digitizing governance & engagement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Training & Advisory Services Section -->
+  <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+      <!-- Left Column: Image -->
+      <div class="lg:col-span-5 relative group">
+        <!-- Ambient Backdrop Glow -->
+        <div
+          class="absolute -inset-4 bg-gradient-to-tr from-[#014083]/20 to-sky-400/20 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        </div>
+
+        <!-- Image Card Container -->
+        <div class="relative rounded-3xl overflow-hidden border border-slate-200/80 bg-white shadow-2xl">
+          <img src="./assets/images/training-advisory-services.jpg" alt="Training and Advisory Services" loading="lazy"
+            decoding="async"
+            class="w-full h-[450px] sm:h-[550px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+          <!-- Overlay Gradient for Depth -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none">
+          </div>
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-white/50 shadow-lg flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-[#014083] text-white flex items-center justify-center font-bold shrink-0">
+              🎓
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Empowering People</p>
+              <p class="text-xs text-slate-500">Skills, capacity building & advisory</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Content -->
+      <div class="lg:col-span-7 flex flex-col justify-center">
+
+        <!-- Badge & Main Heading -->
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Training & Advisory Services
+        </h2>
+
+        <!-- Subtitle Paragraph -->
+        <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
+          We believe that technology adoption succeeds when people are empowered to use it effectively.
+        </p>
+
+        <hr class="my-6 border-t-2 border-[#014083]/20 w-24">
+
+        <!-- Feature Bullet List Cards -->
+        <div class="space-y-4">
+
+          <!-- Bullet 1: Capacity Building -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              👥
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Capacity Building
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Training programs for schools, businesses, and government institutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 2: ICT Adoption Training -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              💻
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                ICT Adoption Training
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Hands-on training to help staff embrace new digital tools.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 3: Certification Programs -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📜
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Certification Programs
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Recognized training for professionals in ICT and business systems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bullet 4: Organizational Restructuring -->
+          <div class="elevation-card p-5 border-l-4 border-l-[#014083] flex items-start gap-4 group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 text-[#014083] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#014083] group-hover:text-white transition-colors duration-300">
+              📈
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-[#014083] transition-colors">
+                Organizational Restructuring
+              </h3>
+              <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">
+                Advisory services to align people, processes, and technology for growth.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Closing Summary Paragraph -->
+        <p class="text-slate-800 font-semibold text-sm sm:text-base mt-6 pt-4 border-t border-slate-200/80">
+          We don’t just deliver solutions — we empower people to use them effectively.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SWOTHub Real Estate / Construction Section (Soft Light Background) -->
+  <section
+    class="fade-in-section relative bg-slate-100/80 border-y border-slate-200/80 my-12 py-16 sm:py-20 w-full overflow-hidden">
+
+    <!-- Subtle Background Pattern & Glow Accents -->
+    <div
+      class="absolute inset-0 bg-[radial-gradient(#014083_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.04] pointer-events-none">
+    </div>
+    <div class="absolute -top-24 -left-24 w-80 h-80 bg-[#014083]/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-blue-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+
+        <!-- Section Badge -->
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#014083]/10 border border-[#014083]/20 text-[#014083] text-xs font-bold tracking-widest uppercase mb-3">
+          Specialized Infrastructure & Development
+        </div>
+
+        <!-- 1. Heading -->
+        <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+          SWOTHub Real Estate & Construction
+        </h2>
+
+        <!-- 2. Horizontal Rule -->
+        <hr class="my-6 border-t-2 border-[#014083]/20 w-24 mx-auto">
+
+        <!-- 3. Paragraph Card -->
+        <div
+          class="elevation-card bg-white/90 backdrop-blur-md p-6 sm:p-8 text-left sm:text-center border-t-4 border-t-[#014083] mb-10 shadow-lg">
+          <p class="text-slate-700 text-base sm:text-xl leading-relaxed font-medium">
+            We offer comprehensive real estate solutions and construction management services from road construction to
+            Sub-Base construction services, tower constructions as well as full-blown prototype buildings for schools,
+            residential as well as government buildings.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- 4. High-Impact Showcase Image -->
+      <div class="relative max-w-5xl mx-auto group">
+        <!-- Ambient Backdrop Glow -->
+        <div
+          class="absolute -inset-4 bg-gradient-to-r from-[#014083]/15 via-blue-400/15 to-[#014083]/15 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative rounded-3xl overflow-hidden border border-slate-200/80 bg-white shadow-2xl">
+          <img src="./assets/images/real-estate-construction-full.jpg"
+            alt="SWOTHub Real Estate & Heavy Construction Projects" loading="lazy" decoding="async"
+            class="w-full h-[380px] sm:h-[500px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+          <!-- Subtle Overlay Gradient -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent pointer-events-none">
+          </div>
+
+          <!-- Floating Banner Badge -->
+          <div
+            class="absolute bottom-6 left-6 right-6 sm:left-8 sm:right-auto p-4 sm:p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 shadow-xl flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#014083] text-white flex items-center justify-center text-xl shrink-0">
+              🏗️
+            </div>
+            <div>
+              <p class="text-sm font-bold text-slate-900">End-to-End Civil & Structural Engineering</p>
+              <p class="text-xs text-slate-500">Roads, sub-bases, towers & prototype structures</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Blank Footer Shell -->
+  <!-- Main Footer Section -->
+  <footer id="main-footer"
+    class="relative bg-[#012d5d] text-blue-100 border-t border-[#014083] mt-auto overflow-hidden">
+
+    <!-- Subtle Ambient Background Glows -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#014083]/50 rounded-full blur-3xl pointer-events-none">
+    </div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl pointer-events-none">
+    </div>
+
+    <!-- Top 4-Column Footer Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+
+        <!-- Column 1: Logo & Vision Statement -->
+        <div class="space-y-4">
+          <a href="index.html" class="inline-block">
+            <img src="./assets/images/logo.jpeg" alt="SWOTHub LTD Logo"
+              class="h-11 w-auto object-contain bg-white/95 p-1.5 rounded-lg shadow-md">
+          </a>
+          <p class="text-sm text-blue-100/90 leading-relaxed max-w-sm font-medium">
+            Empowering Africa’s Future with Smart Digital Solutions
+          </p>
+        </div>
+
+        <!-- Column 2: Our Services -->
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+            Our Services
+          </h3>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li>
+              <a href="services.html"
+                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                Education Sector Solutions
+              </a>
+            </li>
+            <li>
+              <a href="services.html"
+                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                Enterprise Solutions
+              </a>
+            </li>
+            <li>
+              <a href="services.html"
+                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                ICT Services
+              </a>
+            </li>
+            <li>
+              <a href="services.html"
+                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                Government Solutions
+              </a>
+            </li>
+            <li>
+              <a href="services.html"
+                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                Training & Advisory
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Other Services -->
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+            Other Services
+          </h3>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li>
+              <a href="swot-ride.html"
+                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                Swot Ride
+              </a>
+            </li>
+            <li>
+              <a href="swot-store.html"
+                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                Swot Stores
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Our Locations -->
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+            Our Locations
+          </h3>
+          <div class="space-y-3 text-sm font-medium">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-8 h-8 rounded-lg bg-[#014083] text-sky-300 flex items-center justify-center shrink-0 border border-blue-400/30">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-white font-semibold">Abuja, Nigeria</span>
+                <span class="text-xs text-blue-200/80">Headquarters</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 pt-1">
+              <div
+                class="w-8 h-8 rounded-lg bg-[#014083] text-sky-300 flex items-center justify-center shrink-0 border border-blue-400/30">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-white font-semibold">Bauchi, Nigeria</span>
+                <span class="text-xs text-blue-200/80">Northern Region Office</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="border-t border-blue-400/20 bg-[#012349]/60 relative z-10 py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-blue-200/80 font-medium">
+        Copyright © 2026 swothublimited.com
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

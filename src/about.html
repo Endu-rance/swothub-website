@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT Hub - Integrated Solutions for Growth & Sustainability</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <script defer src="./assets/js/main.js"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-slate-50">
+
+    <!-- Floating Sticky Glass Navigation Bar -->
+    <header class="sticky top-4 z-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full -mb-20 sm:-mb-24">
+        <div
+            class="bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-full shadow-lg px-3 sm:px-5 h-14 sm:h-16 flex items-center justify-between transition-all">
+
+            <!-- 1. Left: Logo Image -->
+            <a href="index.html" class="flex items-center">
+                <img src="./assets/images/logo.jpeg" alt="SWOT Hub Logo"
+                    class="h-9 sm:h-11 w-auto object-contain transition-transform duration-200 hover:scale-105 rounded-2xl">
+            </a>
+
+            <!-- 2. Center: Classic Nav Menu with Oval Hover Effect -->
+            <nav class="hidden md:flex items-center space-x-1">
+                <a href="index.html"
+                    class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100/80 active:bg-slate-200 transition-all duration-200">
+                    Home
+                </a>
+                <a href="services.html"
+                    class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100/80 active:bg-slate-200 transition-all duration-200">
+                    Services
+                </a>
+                <a href="about.html"
+                    
+                    class="px-3.5 py-1.5 rounded-full text-sm font-semibold text-[#014083] bg-[#014083]/10 transition-all duration-200">
+                    About
+                </a>
+                <a href="contact.html"
+                    class="px-3.5 py-1.5 rounded-full text-sm font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100/80 active:bg-slate-200 transition-all duration-200">
+                    Contact Us
+                </a>
+            </nav>
+
+            <!-- 3. Right: CTA Action & Mobile Toggle -->
+            <div class="flex items-center gap-3">
+                <a href="contact.html"
+                    class="hidden sm:inline-flex items-center justify-center bg-[#014083] text-white px-3.5 py-1.5 rounded-full text-sm font-semibold hover:bg-[#012d5d] transition-all duration-200 shadow-sm hover:shadow-md">
+                    Get Started
+                </a>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-btn" aria-label="Toggle Navigation"
+                    class="md:hidden p-2 rounded-full text-slate-700 hover:text-[#014083] hover:bg-slate-100 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu"
+            class="hidden md:hidden mt-2 border border-slate-200/80 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl space-y-2">
+            <a href="index.html"
+                class="block px-4 py-2.5 rounded-full text-base font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100">
+                Home</a>
+            <a href="services.html"
+                class="block px-4 py-2.5 rounded-full text-base font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100">Services</a>
+            <a href="about.html"
+                
+                class="block px-4 py-2.5 rounded-full text-base font-semibold text-[#014083] bg-[#014083]/10">
+                About</a>
+            <a href="contact.html"
+                class="block px-4 py-2.5 rounded-full text-base font-medium text-slate-700 hover:text-[#014083] hover:bg-slate-100">Contact
+                Us</a>
+        </div>
+    </header>
+
+    <!-- Services Page Banner Section -->
+    <section class="relative bg-slate-950 text-white pt-36 sm:pt-44 pb-16 sm:pb-24 overflow-hidden flex items-center">
+
+        <!-- Background Ambient Glow & Pattern -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:24px_24px] opacity-20 pointer-events-none">
+        </div>
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-[#014083]/40 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#014083]/60 border border-blue-400/30 text-blue-200 text-xs font-bold tracking-widest uppercase mb-4 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                Who we are
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white drop-shadow-lg">
+                About Us
+            </h1>
+            <p class="mt-4 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+                An integrated solutions provider committed to empowering sustainable growth and operational excellence
+                across sectors.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+        <div
+            class="elevation-card p-8 sm:p-12 border-l-4 border-l-[#014083] relative overflow-hidden bg-white/90 backdrop-blur-md">
+
+            <!-- Decorative Ambient Background Glow -->
+            <div class="absolute -right-20 -top-20 w-80 h-80 bg-[#014083]/5 rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <div class="max-w-4xl">
+
+                <!-- Top Badges Row -->
+                <div class="flex flex-wrap items-center gap-3 mb-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#014083]/10 border border-[#014083]/20 text-[#014083] text-xs font-bold tracking-widest uppercase">
+                        <span class="w-2 h-2 rounded-full bg-[#014083]"></span>
+                        Who We Are
+                    </div>
+                    <div
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-semibold">
+                        <svg class="w-3.5 h-3.5 text-[#014083]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        RC. No: 1894470
+                    </div>
+                </div>
+
+                <!-- Main Section Heading -->
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                    Building Infrastructure & Empowering Digital Futures
+                </h2>
+
+                <!-- Paragraph Content -->
+                <div class="space-y-4 text-slate-600 leading-relaxed text-base sm:text-lg">
+                    <p>
+                        At <strong class="text-slate-900 font-semibold">SWOTHub LTD</strong>, we lead with real estate
+                        and construction expertise—delivering roads, towers, schools, residential, and government
+                        projects with quality and sustainability.
+                    </p>
+                    <p>
+                        Registered as a Limited Liability Company <span class="font-medium text-slate-800">(RC. No:
+                            1894470)</span> and headquartered in Abuja, we also provide integrated ICT, business,
+                        EdTech, and digital solutions that empower individuals, startups, SMEs, government agencies, and
+                        corporations.
+                    </p>
+                    <p class="text-slate-800 font-medium border-t border-slate-200/80 pt-4 mt-4">
+                        Driven by innovation, integrity, and sustainability, <span class="text-[#014083] font-bold">we
+                            bridge gaps in operations, compliance, and growth</span> while preparing organizations to
+                        thrive in the future.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Purpose & Core Values Section -->
+    <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+            <div
+                class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#014083]/10 border border-[#014083]/20 text-[#014083] text-xs font-bold tracking-widest uppercase mb-3">
+                <span class="w-2 h-2 rounded-full bg-[#014083]"></span>
+                Our Guiding Principles
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+                Purpose & Values
+            </h2>
+            <p class="text-slate-600 text-base sm:text-lg mt-3 font-medium">
+                The standard that shapes our culture, decisions, and commitment to excellence.
+            </p>
+        </div>
+
+        <!-- Vision & Mission Side-by-Side Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 sm:mb-16">
+
+            <!-- Vision Card -->
+            <div class="elevation-card p-8 sm:p-10 border-t-4 border-t-[#014083] flex flex-col justify-between group">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-[#014083]">Where We Are
+                        Going</span>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mt-1 mb-4">Our Vision</h3>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        To be Africa’s trusted hub for digital and business transformation through innovative ICT and
+                        tailored enterprise solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mission Card -->
+            <div class="elevation-card p-8 sm:p-10 border-t-4 border-t-[#014083] flex flex-col justify-between group">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-[#014083]">How We Deliver</span>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mt-1 mb-4">Our Mission</h3>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        To empower schools, businesses, and government institutions with efficient, sustainable, and
+                        scalable technology solutions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Our Core Values (Single Card with Clean List) -->
+        <div class="elevation-card p-8 sm:p-12 border-l-4 border-l-[#014083]">
+            <div class="mb-8">
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                    Our Core Values
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base mt-1">
+                    The core principles that guide our everyday interactions and project delivery.
+                </p>
+            </div>
+
+            <ul class="space-y-4 divide-y divide-slate-100">
+
+                <!-- 1. Innovation -->
+                <li class="pt-3 first:pt-0 flex items-start gap-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">Innovation:</strong> Building solutions that inspire
+                        progress.
+                    </p>
+                </li>
+
+                <!-- 2. Integrity -->
+                <li class="pt-4 flex items-start gap-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">Integrity:</strong> Delivering with honesty and
+                        transparency.
+                    </p>
+                </li>
+
+                <!-- 3. Accountability -->
+                <li class="pt-4 flex items-start gap-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">Accountability:</strong> Taking responsibility for
+                        every project outcome.
+                    </p>
+                </li>
+
+                <!-- 4. Customer-Centric Service -->
+                <li class="pt-4 flex items-start gap-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">Customer-Centric Service:</strong> Placing clients at
+                        the heart of our solutions.
+                    </p>
+                </li>
+
+                <!-- 5. Sustainability -->
+                <li class="pt-4 flex items-start gap-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">Sustainability:</strong> Designing technology that
+                        lasts.
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- What We Do - Specialized Business Divisions Section -->
+    <!-- What We Do - Specialized Business Divisions Section -->
+    <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+
+        <!-- Centered Header Area -->
+        <div class="text-center max-w-2xl mx-auto mb-8">
+            <div
+                class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#014083]/10 border border-[#014083]/20 text-[#014083] text-xs font-bold tracking-widest uppercase mb-3">
+                <span class="w-2 h-2 rounded-full bg-[#014083]"></span>
+                Core Operations
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                What We Do
+            </h2>
+        </div>
+
+        <!-- Single Elevation Card Containing All Left-Aligned Content -->
+        <div
+            class="max-w-4xl mx-auto elevation-card p-8 sm:p-12 border-l-4 border-l-[#014083] bg-white/90 backdrop-blur-md relative overflow-hidden">
+
+            <!-- Subtitle Paragraph -->
+            <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed mb-6 text-left">
+                <strong class="text-slate-900">SWOTHub LTD</strong> operates through four specialized business
+                divisions:
+            </p>
+
+            <!-- Professional Bullet List -->
+            <ul class="space-y-4 mb-8 text-left">
+
+                <!-- Division 1 -->
+                <li class="flex items-start gap-3.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">Real Estate / Construction Services:</strong> Roads,
+                        sub-base, towers, schools, housing & govt. builds.
+                    </p>
+                </li>
+
+                <!-- Division 2 -->
+                <li class="flex items-start gap-3.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">ICT / Enterprise Solutions:</strong> Cloud,
+                        cybersecurity, big data, compliance, ERP, digital transformation & workflow automation.
+                    </p>
+                </li>
+
+                <!-- Division 3 -->
+                <li class="flex items-start gap-3.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">EdTech Solutions:</strong> School management systems,
+                        e-learning, curriculum tools.
+                    </p>
+                </li>
+
+                <!-- Division 4 -->
+                <li class="flex items-start gap-3.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#014083] mt-2 shrink-0"></span>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        <strong class="text-slate-900 font-bold">Government & Public Sector Solutions:</strong>
+                        E-governance systems, citizen engagement tools, and digital reporting platforms.
+                    </p>
+                </li>
+
+            </ul>
+
+            <!-- Horizontal Divider -->
+            <hr class="my-6 border-t border-slate-200/80 w-full">
+
+            <!-- Ecosystem Summary Paragraph -->
+            <p class="text-slate-800 font-semibold text-base sm:text-lg leading-relaxed text-left">
+                Together, these divisions form a comprehensive ecosystem that enables schools, enterprises, and
+                governments to work smarter and grow sustainably.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Blank Footer Shell -->
+    <!-- Main Footer Section -->
+    <footer id="main-footer"
+        class="relative bg-[#012d5d] text-blue-100 border-t border-[#014083] mt-auto overflow-hidden">
+
+        <!-- Subtle Ambient Background Glows -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#014083]/50 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <!-- Top 4-Column Footer Grid -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+
+                <!-- Column 1: Logo & Vision Statement -->
+                <div class="space-y-4">
+                    <a href="index.html" class="inline-block">
+                        <img src="./assets/images/logo.jpeg" alt="SWOTHub LTD Logo"
+                            class="h-11 w-auto object-contain bg-white/95 p-1.5 rounded-lg shadow-md">
+                    </a>
+                    <p class="text-sm text-blue-100/90 leading-relaxed max-w-sm font-medium">
+                        Empowering Africa’s Future with Smart Digital Solutions
+                    </p>
+                </div>
+
+                <!-- Column 2: Our Services -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                        Our Services
+                    </h3>
+                    <ul class="space-y-2.5 text-sm font-medium">
+                        <li>
+                            <a href="services.html"
+                                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                                Education Sector Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html"
+                                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                                Enterprise Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html"
+                                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                                ICT Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html"
+                                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                                Government Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html"
+                                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                                Training & Advisory
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Other Services -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                        Other Services
+                    </h3>
+                    <ul class="space-y-2.5 text-sm font-medium">
+                        <li>
+                            <a href="swot-ride.html"
+                                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                                Swot Ride
+                            </a>
+                        </li>
+                        <li>
+                            <a href="swot-store.html"
+                                class="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                                Swot Stores
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Our Locations -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                        Our Locations
+                    </h3>
+                    <div class="space-y-3 text-sm font-medium">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-[#014083] text-sky-300 flex items-center justify-center shrink-0 border border-blue-400/30">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="block text-white font-semibold">Abuja, Nigeria</span>
+                                <span class="text-xs text-blue-200/80">Headquarters</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 pt-1">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-[#014083] text-sky-300 flex items-center justify-center shrink-0 border border-blue-400/30">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="block text-white font-semibold">Bauchi, Nigeria</span>
+                                <span class="text-xs text-blue-200/80">Northern Region Office</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="border-t border-blue-400/20 bg-[#012349]/60 relative z-10 py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-blue-200/80 font-medium">
+                Copyright © 2026 swothublimited.com
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

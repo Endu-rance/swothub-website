@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOTHub LTD — Coming Soon Services</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Animations & Glassmorphism Styling -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #011b38;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+
+        .glass-panel {
+            background: rgba(1, 45, 93, 0.45);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-12px) rotate(1.5deg);
+            }
+        }
+
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        /* Pulse Ring Animation */
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.08);
+                opacity: 0.3;
+            }
+
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+        }
+
+        .animate-pulse-ring {
+            animation: pulse-ring 4s ease-in-out infinite;
+        }
+
+        /* Car Dash Driving Animation */
+        @keyframes dash {
+            to {
+                stroke-dashoffset: -100;
+            }
+        }
+
+        .animate-dash {
+            stroke-dasharray: 12, 12;
+            animation: dash 2.5s linear infinite;
+        }
+
+        /* Sparkle Float */
+        @keyframes sparkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(0.8);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        .animate-sparkle-1 {
+            animation: sparkle 3s ease-in-out infinite;
+        }
+
+        .animate-sparkle-2 {
+            animation: sparkle 3s ease-in-out 1.5s infinite;
+        }
+
+        /* Smooth View Switcher Fade */
+        .view-content {
+            transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+        }
+
+        .view-hidden {
+            opacity: 0;
+            transform: scale(0.96);
+            pointer-events: none;
+            position: absolute;
+            inset: 0;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between relative selection:bg-[#014083] selection:text-white">
+
+    <!-- Background Ambient Glow Orbs -->
+    <div
+        class="fixed top-0 left-1/4 w-[500px] h-[500px] bg-[#014083]/40 rounded-full blur-[140px] pointer-events-none -z-10">
+    </div>
+    <div
+        class="fixed bottom-0 right-1/4 w-[600px] h-[600px] bg-sky-600/20 rounded-full blur-[160px] pointer-events-none -z-10">
+    </div>
+    <div
+        class="fixed top-1/3 right-10 w-[300px] h-[300px] bg-blue-500/15 rounded-full blur-[100px] pointer-events-none -z-10">
+    </div>
+
+    <!-- Header & Interactive Switcher Bar -->
+    <header class="w-full pt-6 px-4 sm:px-8 relative z-30">
+        <div
+            class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 glass-panel p-3.5 sm:p-4 rounded-2xl shadow-2xl">
+
+            <!-- Logo & Brand Badge -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div
+                    class="bg-white/95 p-1.5 rounded-xl shadow-lg border border-white/40 group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-[#014083] text-white font-black flex items-center justify-center text-sm tracking-tighter">
+                        SW
+                    </div>
+                </div>
+                <div class="text-left">
+                    <span class="block text-white font-extrabold text-base tracking-tight">SWOTHub <span
+                            class="text-sky-400">LTD</span></span>
+                    <span class="block text-[10px] text-blue-200/80 font-medium tracking-wider uppercase">RC. No:
+                        1894470</span>
+                </div>
+            </a>
+
+            <!-- Service Switcher Toggle Buttons -->
+            <div
+                class="flex items-center bg-slate-950/60 p-1.5 rounded-xl border border-white/10 w-full sm:w-auto justify-center">
+                <button id="btn-stores" onclick="switchView('stores')"
+                    class="flex-1 sm:flex-none px-5 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 bg-[#014083] text-white shadow-md">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    Swot Stores
+                </button>
+                
+            </div>
+
+            <!-- Home Return Button (Header Quick Access) -->
+            <a href="index.html"
+                class="hidden md:inline-flex items-center gap-2 text-xs font-semibold text-blue-200 hover:text-white transition-colors py-2 px-4 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10">
+                <span>Return Home</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8 sm:py-12 w-full flex-grow flex items-center justify-center relative">
+
+        <!-- ========================================== -->
+        <!-- VIEW 1: SWOT STORES (ONLINE E-COMMERCE)   -->
+        <!-- ========================================== -->
+        <div id="view-stores" class="view-content w-full flex flex-col items-center text-center">
+
+            <!-- Status Badge -->
+            <div
+                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-300 text-xs font-bold tracking-widest uppercase mb-6 shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+                Next-Gen E-Commerce Launching Soon
+            </div>
+
+            <!-- Vector Illustration: Floating Shopping Bag & Tech Items -->
+            <div
+                class="relative w-full max-w-md aspect-square max-h-[300px] sm:max-h-[340px] mb-8 flex items-center justify-center">
+
+                <!-- Glowing Backdrop Halo -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-tr from-[#014083]/40 to-sky-400/20 rounded-full blur-2xl animate-pulse-ring">
+                </div>
+
+                <svg class="w-full h-full relative z-10 animate-float" viewBox="0 0 400 400" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <!-- Base Shadow -->
+                    <ellipse cx="200" cy="350" rx="120" ry="16" fill="#000" fill-opacity="0.3" filter="blur(8px)" />
+
+                    <!-- Shopping Bag Body -->
+                    <path d="M120 160 L140 330 C140 340 150 348 160 348 H240 C250 348 260 340 260 330 L280 160 H120 Z"
+                        fill="url(#bagGradient)" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                    <path d="M120 160 L135 330 H265 L280 160 H120 Z" fill="#014083" fill-opacity="0.4" />
+
+                    <!-- Bag Handles -->
+                    <path d="M160 170 V120 C160 98 178 80 200 80 C222 80 240 98 240 120 V170"
+                        stroke="url(#handleGradient)" stroke-width="10" stroke-linecap="round" fill="none" />
+
+                    <!-- Front Logo Badge on Bag -->
+                    <rect x="170" y="220" width="60" height="40" rx="10" fill="rgba(255,255,255,0.15)"
+                        stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                    <text x="200" y="245" fill="#FFFFFF" font-size="14" font-weight="bold" text-anchor="middle"
+                        font-family="Inter">SWOT</text>
+
+                    <!-- Floating Item 1: Smart Box -->
+                    <g class="animate-sparkle-1">
+                        <rect x="70" y="180" width="55" height="55" rx="12" fill="url(#boxGrad)"
+                            stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                        <path d="M87 207 L97 217 L112 197" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+
+                    <!-- Floating Item 2: Digital Tag -->
+                    <g class="animate-sparkle-2">
+                        <rect x="270" y="140" width="60" height="36" rx="8" transform="rotate(-12 270 140)"
+                            fill="url(#tagGrad)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+                        <circle cx="282" cy="155" r="4" fill="#FFFFFF" />
+                        <text x="310" y="160" fill="#FFFFFF" font-size="11" font-weight="bold"
+                            font-family="Inter">$</text>
+                    </g>
+
+                    <!-- Sparkling Accent Stars -->
+                    <path d="M110 90 L113 98 L121 101 L113 104 L110 112 L107 104 L99 101 L107 98 Z" fill="#38BDF8" />
+                    <path d="M290 260 L292 265 L297 267 L292 269 L290 274 L288 269 L283 267 L288 265 Z"
+                        fill="#38BDF8" />
+
+                    <!-- Gradients -->
+                    <defs>
+                        <linearGradient id="bagGradient" x1="120" y1="160" x2="280" y2="348"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#014083" />
+                            <stop offset="1" stop-color="#012349" />
+                        </linearGradient>
+                        <linearGradient id="handleGradient" x1="160" y1="80" x2="240" y2="170"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#38BDF8" />
+                            <stop offset="1" stop-color="#014083" />
+                        </linearGradient>
+                        <linearGradient id="boxGrad" x1="70" y1="180" x2="125" y2="235" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0284C7" />
+                            <stop offset="1" stop-color="#0369A1" />
+                        </linearGradient>
+                        <linearGradient id="tagGrad" x1="270" y1="140" x2="330" y2="176" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0284C7" />
+                            <stop offset="1" stop-color="#0f172a" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Headline & Content -->
+            <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight max-w-2xl mb-4">
+                Swot Stores is Coming Soon
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed mb-8 font-normal">
+                We are building a seamless, high-trust marketplace for verified products, electronics, and enterprise
+                essentials—backed by fast nationwide delivery and buyer protection.
+            </p>            
+
+            <!-- Return Home Button -->
+            <a href="index.html"
+                class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-all duration-300 border border-white/20 backdrop-blur-md shadow-xl hover:-translate-y-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Return Home
+            </a>
+
+        </div>
+
+        
+        
+
+    </main>
+
+    <!-- Footer Bar -->
+    <footer
+        class="w-full py-6 text-center text-xs text-slate-400 border-t border-white/10 glass-panel mt-auto relative z-20">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p class="font-medium">Copyright © 2026 SWOTHub LTD. All Rights Reserved.</p>
+            <p class="text-slate-400">Headquarters: Abuja, Nigeria | RC. No: 1894470</p>
+        </div>
+    </footer>
+
+    <!-- Switcher & Form Logic -->
+    <script>       
+
+        function handleNotify(event, type) {
+            event.preventDefault();
+            const msgEl = document.getElementById('msg-' + type.toLowerCase());
+            if (msgEl) {
+                msgEl.classList.remove('hidden');
+                event.target.reset();
+                setTimeout(() => {
+                    msgEl.classList.add('hidden');
+                }, 5000);
+            }
+        }
+    
+    </script>
+</body>
+
+</html>
