@@ -242,6 +242,60 @@
     </div>
   </section>
 
+  <!-- Client Spotlight & Project Video Section -->
+  <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+    <div class="elevation-card p-8 sm:p-12 relative overflow-hidden bg-white">
+      <!-- Ambient Backdrop Glow -->
+      <div class="absolute -right-20 -top-20 w-80 h-80 bg-[#014083]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#014083]/10 border border-[#014083]/20 text-[#014083] text-xs font-bold tracking-widest uppercase mb-4">
+          <span class="w-2 h-2 rounded-full bg-[#014083]"></span>
+          Client Spotlight & Project Insight
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Featured Client & Project Walkthrough
+        </h3>
+        
+      </div>
+
+      <!-- Grid Container for Client Picture and YouTube Video -->
+      <!-- Grid Container for Client Picture and YouTube Video -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        
+        <!-- Column 1: Client Picture -->
+        <div class="relative group">
+          <div class="absolute -inset-2 bg-gradient-to-tr from-[#014083]/20 to-blue-400/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="relative rounded-2xl overflow-hidden border border-slate-200/80 bg-slate-100 shadow-xl">
+            <!-- Replace ./assets/images/client-photo.jpg with your actual client image file name -->
+            <img src="./assets/images/walkthrough.jpeg" alt="Client Picture"
+              class="w-full h-[350px] sm:h-[400px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-white/95 backdrop-blur-md border border-white/50 shadow-md">
+              <p class="text-sm font-bold text-slate-900">Valued Client Partnership</p>
+              <p class="text-xs text-slate-500">Delivering excellence and tailored solutions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: YouTube Video Embed (Matched Height) -->
+        <!-- Column 2: Direct HTML5 Video Player (Zero Black Bars) -->
+        <div class="relative group">
+          <div class="absolute -inset-2 bg-gradient-to-tr from-blue-400/20 to-[#014083]/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          
+          <div class="relative rounded-2xl overflow-hidden border border-slate-200/80 bg-slate-900 shadow-xl aspect-video w-full">
+            <video class="w-full h-full object-cover" controls autoplay muted loop playsinline>
+              <source src="./assets/videos/swotvideo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- Business & Enterprise Solutions Section -->
   <section class="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
@@ -251,7 +305,7 @@
       <div class="lg:col-span-7 flex flex-col justify-center">
 
         <!-- Badge & Main Heading -->
-        `
+        
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
           Business & Enterprise Solutions
         </h2>
@@ -839,12 +893,6 @@
   </section>
 
 
-
-
-
-
-
-  <!-- Blank Footer Shell -->
   <!-- Main Footer Section -->
   <footer id="main-footer"
     class="relative bg-[#012d5d] text-blue-100 border-t border-[#014083] mt-auto overflow-hidden">
